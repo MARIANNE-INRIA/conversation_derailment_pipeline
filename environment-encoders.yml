@@ -1,0 +1,23 @@
+name: PREDICHATE_ENCODERS
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu124
+      - torch==2.6.0+cu124
+      - "huggingface_hub>=0.34.0,<1.0"
+      - "tokenizers>=0.21,<0.22"
+      - transformers==4.55.0
+      - optuna==4.9.0
+      - accelerate
+      - protobuf==5.29.5
+      - sentencepiece
+      - pandas
+      - numpy
+      - scikit-learn
+      - scipy
+      - "matplotlib>=3.7,<4"
+      - tqdm

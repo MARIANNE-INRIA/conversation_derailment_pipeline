@@ -1,0 +1,42 @@
+{
+  "trainer": "roberta",
+  "model_name": "roberta-base",
+  "train_path": "encoder_data/roberta/train_samples.pt",
+  "val_path": "encoder_data/roberta/val_samples.pt",
+  "fixed": {
+    "epochs": 5,
+    "patience": 2,
+    "tau_start": 0.05,
+    "tau_end": 0.95,
+    "tau_step": 0.01,
+    "warmup_ratio": 0.1
+  },
+  "baseline": {
+    "lr": 5e-06,
+    "weight_decay": 0.01,
+    "effective_batch_size": 16,
+    "dropout": 0.2
+  },
+  "space": {
+    "lr": {
+      "low": 1e-06,
+      "high": 5e-05,
+      "log": true
+    },
+    "weight_decay": [
+      0.0,
+      0.01,
+      0.1
+    ],
+    "effective_batch_size": [
+      8,
+      16,
+      32
+    ],
+    "dropout": [
+      0.1,
+      0.2,
+      0.3
+    ]
+  }
+}

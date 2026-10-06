@@ -1,0 +1,52 @@
+{
+  "trainer": "llm",
+  "model_name": "google/gemma-3-4b-it",
+  "train_path": "data/train_samplesLLMs.csv",
+  "val_path": "data/val_samplesLLMs.csv",
+  "fixed": {
+    "epochs": 5,
+    "patience": 2,
+    "tau_start": 0.05,
+    "tau_end": 0.95,
+    "tau_step": 0.01,
+    "batch_size": 4,
+    "max_length": 1024,
+    "label_smoothing": 0.1,
+    "amp_dtype": "float32",
+    "threshold_objective": "f1"
+  },
+  "baseline": {
+    "lr": 1e-06,
+    "weight_decay": 0.01,
+    "effective_batch_size": 8,
+    "lora_r": 8,
+    "lora_dropout": 0.15
+  },
+  "space": {
+    "lr": {
+      "low": 1e-06,
+      "high": 0.0002,
+      "log": true
+    },
+    "weight_decay": [
+      0.0,
+      0.01,
+      0.1
+    ],
+    "effective_batch_size": [
+      8,
+      16,
+      32
+    ],
+    "lora_r": [
+      8,
+      16,
+      32
+    ],
+    "lora_dropout": [
+      0.05,
+      0.1,
+      0.15
+    ]
+  }
+}
