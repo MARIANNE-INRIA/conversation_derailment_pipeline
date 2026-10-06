@@ -101,3 +101,26 @@ Run the repository's unit tests locally with:
 ```bash
 python -m unittest discover -s tests -v
 ```
+
+## Citation
+
+If you use this pipeline in your research, please cite:
+
+Fu, Yingxue, and Anaïs Ollagnier. 2026. [A Theoretically Grounded Approach to Summarizing Conversation Dynamics for Forecasting the Derailment of Online Conversations](https://aclanthology.org/2026.acl-long.243/). In *Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, pages 5368–5384. Association for Computational Linguistics. DOI: [10.18653/v1/2026.acl-long.243](https://doi.org/10.18653/v1/2026.acl-long.243).
+
+Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff). Place this file at the repository root to enable GitHub’s “Cite this repository” feature.
+
+```bibtex
+@inproceedings{fu-ollagnier-2026-theoretically,
+  title = {A Theoretically Grounded Approach to Summarizing Conversation Dynamics for Forecasting the Derailment of Online Conversations},
+  author = {Fu, Yingxue and Ollagnier, Ana{\"i}s},
+  booktitle = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  year = {2026},
+  month = jul,
+  publisher = {Association for Computational Linguistics},
+  address = {San Diego, California, United States},
+  pages = {5368--5384},
+  doi = {10.18653/v1/2026.acl-long.243},
+  url = {https://aclanthology.org/2026.acl-long.243/}
+}
+```

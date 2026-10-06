@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: If you use this pipeline in your research, please cite the paper below.
+title: Conversation Derailment Pipeline
+type: software
+authors:
+- family-names: Fu
+  given-names: Yingxue
+- family-names: Ollagnier
+  given-names: Anaïs
+preferred-citation:
+  type: conference-paper
+  title: A Theoretically Grounded Approach to Summarizing Conversation Dynamics for Forecasting the Derailment of Online Conversations
+  authors:
+  - family-names: Fu
+    given-names: Yingxue
+  - family-names: Ollagnier
+    given-names: Anaïs
+  editors:
+  - family-names: Liakata
+    given-names: Maria
+  - family-names: Moreira
+    given-names: Viviane P.
+  - family-names: Zhang
+    given-names: Jiajun
+  - family-names: Jurgens
+    given-names: David
+  collection-title: 'Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)'
+  year: 2026
+  month: 7
+  publisher:
+    name: Association for Computational Linguistics
+  conference:
+    name: 64th Annual Meeting of the Association for Computational Linguistics
+    address: San Diego, California, United States
+  url: https://aclanthology.org/2026.acl-long.243/
+  doi: 10.18653/v1/2026.acl-long.243
+  start: '5368'
+  end: '5384'
+  isbn: 979-8-89176-390-6
